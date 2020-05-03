@@ -153,13 +153,11 @@ view model =
 
 main : Program Int Model Msg
 main =
-    Browser.document
+    Browser.element
         { init = init
         , update = update
         , view =
             \m ->
-                { title = "Elm 0.19 starter"
-                , body = [ view m ]
-                }
+                view m
         , subscriptions = \_ -> Sub.none
         }

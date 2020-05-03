@@ -24,6 +24,7 @@ elm-stuff/
 repl-temp-*
 
 .DS_Store
+*.swp
 example/dist
 
 ignore
